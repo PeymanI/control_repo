@@ -1,6 +1,4 @@
 node default {
-  file {'/root/README':
-    ensure => file,
-    content => 'This is a README file',
-  }
+  node 'pmast01.localdomain' {
+    include role::master_server
 }
