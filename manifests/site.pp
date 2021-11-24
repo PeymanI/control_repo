@@ -1,7 +1,7 @@
 node default {
   file { '/root/README':
     ensure => file,
-    content => 'This Server/Service is under the control of PUPPET',
+    content => "This Server/Service ${fqdn} is under the control of PUPPET\n",
     owner   => 'root',
   }
 }
