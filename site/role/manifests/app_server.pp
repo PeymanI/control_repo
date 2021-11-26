@@ -4,6 +4,6 @@ class role::app_server {
   include profile::app
   host {'pcli01.localdomain':
     ensure => present,
-    ip => 192.168.57.102',
+    ip => '192.168.57.102',
     }
 }
