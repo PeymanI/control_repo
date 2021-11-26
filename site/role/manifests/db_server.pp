@@ -3,6 +3,6 @@ class role::db_server {
   include profile::db
   host {'pcli02.localdomain':
     ensure => present,
-    ip => 192.168.57.103',
+    ip => '192.168.57.103',
     }
 }
