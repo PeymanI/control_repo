@@ -14,8 +14,8 @@ class profile::users_and_groups {
   user {'aa_ian':
     ensure     => present,
     uid        => 1001,
-    gid        => 'staff'
-    groups     => 'wheel'
+    gid        => 2001,
+    groups     => 2002,
     comment    => 'ian p',
     home       => '/home/aa_ian',
     managehome => true,
@@ -24,8 +24,8 @@ class profile::users_and_groups {
   user {'aa_ian1':
     ensure     => present,
     uid        => 1002,
-    gid        => 'staff',
-    groups     => [ 'wheel','project01' ],
+    gid        => 2001,
+    groups     => 2002,
     comment    => 'ian p - emergency account',
     home       => '/home/aa_ian1',
     managehome => true,
@@ -34,7 +34,7 @@ class profile::users_and_groups {
   user {'ex103435':
     ensure     => present,
     uid        => 2001,
-    gid        => 'project01'
+    gid        => 2002,
     comment    => 'Project account 01',
     home       => '/home/project/ex103435',
     managehome => true,
