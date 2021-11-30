@@ -1,3 +1,4 @@
-class { 'motd':
-  content => "Hello world!\n",
+class profile::motd {
+  include motd
 }
+
