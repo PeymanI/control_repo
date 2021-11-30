@@ -10,7 +10,6 @@ class profile::users_and_groups {
     gid    => 2002,
   }
  
- 
   user {'aa_ian':
     ensure     => present,
     uid        => 1001,
