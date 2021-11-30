@@ -1,2 +1,3 @@
-include profile::motd {
+class profile::motd {
+  include motd
 }
