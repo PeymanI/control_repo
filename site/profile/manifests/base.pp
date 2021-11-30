@@ -10,5 +10,6 @@ class profile::base {
   }
   
   include profile::ssh_server
+  include motd
 
 }
