@@ -5,4 +5,5 @@ class profile::motd {
     owner   => 'root',
     group   => 'root',
     mode    => '644',
+    }
 }
