@@ -19,7 +19,7 @@ class profile::users_and_groups {
     comment    => 'ian p',
     home       => '/home/aa_ian',
     managehome => true,
-  }  
+  }
   
   user {'aa_ian1':
     ensure     => present,
@@ -29,7 +29,7 @@ class profile::users_and_groups {
     comment    => 'ian p - emergency account',
     home       => '/home/aa_ian1',
     managehome => true,
-  }  
+  }
   
   user {'ex103435':
     ensure     => present,
@@ -38,7 +38,7 @@ class profile::users_and_groups {
     comment    => 'Project account 01',
     home       => '/home/project/ex103435',
     managehome => true,
-  }  
+  }
   
   
 user {'admin':
