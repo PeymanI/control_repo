@@ -5,12 +5,10 @@ class profile::base {
     owner   => 'root',
   }
  
- user {'admin':
-    ensure => present
-  }
-  
+ 
   include profile::ssh_server
   include profile::motd
+  include profile::users_and_groups
   
 
 }
