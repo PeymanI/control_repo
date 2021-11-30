@@ -1,3 +1,3 @@
 class { 'motd':
-  template => 'motd.epp',
+  content => "Hello world!\n",
 }
