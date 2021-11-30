@@ -2,12 +2,12 @@ class profile::users_and_groups {
  
   group {'staff':
     ensure => present,
-    gid    => '2001',
+    gid    => 2001,
   }
  
  group {'project01':
     ensure => present,
-    gid    => '2002',
+    gid    => 2002,
   }
  
  
