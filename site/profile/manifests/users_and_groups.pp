@@ -5,15 +5,6 @@ class profile::users_and_groups {
     gid    => '2001',
   }
  
-  user {'admin':
-    ensure => absent,
-  }
-  
-  group {'aa_ian':
-    ensure => absent,
-  }
-  
-  
   user {'aa_ian':
     ensure     => present,
     uid        => 1001,
@@ -23,5 +14,13 @@ class profile::users_and_groups {
     managehome => true,
   }  
   
-    
+user {'admin':
+    ensure => absent,
+  }
+  
+  group {'aa_ian':
+    ensure => absent,
+  }
+
+
 }
