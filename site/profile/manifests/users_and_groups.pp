@@ -15,7 +15,7 @@ class profile::users_and_groups {
     uid        => 1001,
     gid        => 2001,
  #   groups     => 2002,
-    comment    => 'ian p',
+    comment    => 'ian p - management account',
     home       => '/home/aa_ian',
     managehome => true,
   }
@@ -25,7 +25,7 @@ class profile::users_and_groups {
     uid        => 2002,
     gid        => 2001,
  #   groups     => 2002,
-    comment    => 'ian p - emergency account',
+    comment    => 'ian p - emergency account - backup',
     home       => '/home/aa_ian1',
     managehome => true,
   }
