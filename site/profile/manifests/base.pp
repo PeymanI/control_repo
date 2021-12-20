@@ -5,7 +5,7 @@ class profile::base {
     owner   => 'root',
   }
  
- 
+  include profile::ntp
   include profile::ssh_server
   include profile::motd
   include profile::users_and_groups
