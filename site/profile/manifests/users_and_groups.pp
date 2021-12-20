@@ -22,7 +22,7 @@ class profile::users_and_groups {
   
   user {'aa_ian1':
     ensure     => present,
-    uid        => 1002,
+    uid        => 2002,
     gid        => 2001,
  #   groups     => 2002,
     comment    => 'ian p - emergency account',
