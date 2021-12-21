@@ -11,8 +11,8 @@ file { '/README.PUPPET':
 
 node 'pmast01.localdomain' {
   include role::master_server
-  class { 'ntp':
-        servers => [ 'server 0.uk.pool.ntp.org', 'server 1.uk.pool.ntp.org', 'server 2.uk.pool.ntp.org', 'server 3.uk.pool.ntp.org' ],
+  class { "ntp":
+        servers  => [ '0.uk.pool.ntp.org', '1.uk.pool.ntp.org', '2.uk.pool.ntp.org', '3.uk.pool.ntp.org' ],
   }
 }
 
