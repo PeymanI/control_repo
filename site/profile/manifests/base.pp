@@ -10,5 +10,9 @@ class profile::base {
   include profile::motd
   include profile::users_and_groups
   
+  class { 'ntp':
+    servers => [ 'ntp1.corp.com', 'ntp2.corp.com' ],
+  }
+
 
 }
