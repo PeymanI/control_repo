@@ -1,19 +1,19 @@
 node default {
-file { '/README.PUPPET':
+  file { '/README.PUPPET':
     ensure => file,
     content => "This Server/Service ${fqdn} is under the control of PUPPET\n",
     owner   => 'root',
   }
   
- 
- 
+  class { 'ntp':
+    servers => [ '0.uk.pool.ntp.org', '1.uk.pool.ntp.org', '2.uk.pool.ntp.org', '3.uk.pool.ntp.org' ],
+  }
+  
 }
+  
 
 node 'pmast01.localdomain' {
   include role::master_server
-  class { "ntp":
-        servers  => [ '0.uk.pool.ntp.org', '1.uk.pool.ntp.org', '2.uk.pool.ntp.org', '3.uk.pool.ntp.org' ],
-  }
 }
 
 node /^pcli01/ { 
